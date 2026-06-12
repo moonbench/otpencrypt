@@ -6,4 +6,8 @@ description = "Encrypts and decrypts files with one-time pads"
 license = "GPL-3.0-only"
 
 [dependencies]
-clap = "~2.33.0"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+libc = "0.2"
+rand = "0.8"
+zeroize = "1"
